@@ -3,6 +3,7 @@ Você receberá acesso a um microssistema web contendo:
 • Tela de Login
 • Tela de Criação de Conta
 • Tela simples de Sucesso
+
 O objetivo é avaliar sua capacidade de:
 • Identificar bugs funcionais
 • Identificar inconsistências de experiência
