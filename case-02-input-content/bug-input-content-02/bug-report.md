@@ -1,0 +1,44 @@
+# Bug Report — Campo Telefone não possui máscara de telefone
+
+## Resumo
+O campo TELEFONE do formulário de cadastro não possui restrição de entrada, permitindo que letras e caracteres especiais sejam inseridos livremente, sem qualquer validação ou bloqueio.
+
+## Impacto
+Permite a submissão de valores inválidos para o backend, compromete a integridade dos dados coletados e introduz inconsistência de validação no formulário de cadastro. 
+**Severidade:** Baixa (falha de validação com impacto direto na integridade dos dados, sem quebra crítica do sistema.)
+
+## Escopo
+**Afeta:** 
+ 1. Campo TELEFONE no formulário de criação de conta (front)
+**Plataformas:** Web (desktop e visualizações responsivas)
+**Navegadores:** Reproduzível em navegadores modernos (baseados em Chromium e WebKit)
+**Usuários:** Todos os usuários que acessam a tela de criação de conta
+
+## Ambiente
+**Ambiente:** Ambiente similar ao de produção
+**Feature flags:** Padrões padrão, sem flags de validação de input habilitadas
+
+
+## Passos para Reproduzir
+1. Dado que estou na tela de login
+2. Quando clico na opção "Criar conta"
+3. E localizo os campos NOME COMPLETO, TELEFONE, EMAIL, SENHA e CONFIRMAR SENHA.
+4. Então verifico que o padding definido para os campos do formulário estão fora do padrão de design, sobrepondo uns aos outros
+
+## Passos para Reproduzir
+1. Dado que estou na tela de login
+2. Quando clico na opção "Criar conta"
+3. E localizo o campo TELEFONE.
+4. Quando insiro letras ou caracteres especiais (ex: `AA111`, `abc!@#`).
+5. Então o campo aceita os valores sem restrição ou mensagem de erro.
+
+## Resultado Esperado
+O campo TELEFONE deve aceitar apenas caracteres numéricos, bloqueando qualquer entrada de letras 
+ou símbolos e exibindo uma mensagem de validação caso o valor inserido seja inválido.
+
+## Hipóteses
+**Ausência de validação no input**
+* O campo TELEFONE não possui o atributo `type="tel"` ou restrição via `pattern`, `inputmode` 
+ou validação JavaScript, permitindo qualquer tipo de caractere. O comportamento correto seria 
+restringir a entrada a dígitos numéricos, consumindo uma regra de validação centralizada do 
+design system em vez de depender do comportamento padrão do browser.
