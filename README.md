@@ -1,50 +1,34 @@
-## Arquitetura de Pastas — Bug Reports 4blue
-```
-desafio-4blue/
-├── case-01-input-padding/
-│
-├── case-02-input-content/
-│
-└── case-03-submit/
-        
-```
+Teste Técnico – QA Tester - Processo Seletivo – 4blue
+Você receberá acesso a um microssistema web contendo:
+• Tela de Login
+• Tela de Criação de Conta
+• Tela simples de Sucesso
 
-### Descrição das Pastas
+O objetivo é avaliar sua capacidade de:
+• Identificar bugs funcionais
+• Identificar inconsistências de experiência
+• Avaliar problemas de segurança básicos
+• Classificar e priorizar problemas
 
-**`case-01-input-padding/`**
-Contém bugs relacionados a inconsistências visuais dos campos, como espaçamento interno, alinhamento e divergências entre o layout implementado e o definido na prototipagem.
+Acesso o “microssistema” pelo: https://qa-play-sim.lovable.app/
 
-**`case-02-input-content/`**
-Contém bugs relacionados ao comportamento de preenchimento dos campos, como ausência de validação de tipo, falta de máscara de formatação e restrições de entrada.
+Sua tarefa
+Durante sua análise, você deverá:
+1. Explorar o sistema livremente.
+2. Identificar e descrever os bugs encontrados.
+3. Para cada bug encontrado, informar:
+o Título
+o Descrição
+o Passos para reproduzir (Pode ser em vídeo – nesse caso coloque o link dele)
+o Resultado atual
+o Resultado esperado
+o Severidade (Crítico / Alto / Médio / Baixo)
+o Prioridade (Alta / Média / Baixa)
 
-**`case-03-submit/`**
-Contém bugs relacionados ao envio do formulário, como ausência de validação de campos obrigatórios, submissão indevida e comportamentos incorretos ao clicar em "Criar conta" e "Entrar"
-│
-└── **`submit-login`** - Relatórios relacionados ao envio do formulário na tela de login
-│
-└── **`submit-account/`** - Relatórios relacionados ao envio do formulário na tela de criação de conta
+4. Ao final, responder:
+o Quais 2 bugs você corrigiria primeiro e por quê?
+o Caso tenha, coloque suas sugestões de melhorias para essas telas.
 
-
-**`suggestions`**
-Contém sugestões de melhoria para o portal, considerando
-### Descrição das Arquivos
-
-**`bug-report`**
-
-# Estrutura do Bug Report
-
-- **Resumo** — descrição objetiva do problema observado e onde ele ocorre.
-- **Impacto** — consequências do bug, com Severidade (gravidade técnica) e Impacto (abrangência funcional).
-- **Escopo** — o que é afetado, em quais plataformas, navegadores e para quais usuários.
-- **Ambiente** — ambiente de reprodução e estado das feature flags.
-- **Passos para Reproduzir** — sequência de ações que leva ao comportamento incorreto.
-- **Resultado Esperado** — comportamento correto que o sistema deveria se comportar
-
----
-**`hipoteses`**
-## Estrutura das Hipóteses
-
-- **Prováveis Causas** — causas técnicas mais prováveis para o bug.
-- **Fatores Contribuintes** — lacunas de processo ou arquitetura que permitiram o bug chegar à produção.
-- **Riscos de Regressão** — riscos de o problema se agravar ou se replicar em outras partes do produto.
-- **Estratégia de Mitigação** — ações recomendadas para corrigir o bug e prevenir recorrências.
+Entrega
+Crie um repositório público no Github e coloque um arquivo ReadMe.md contendo todas as informações da tarefa e a sua resposta.
+Envie como resposta apenas o link do repositório no github.
