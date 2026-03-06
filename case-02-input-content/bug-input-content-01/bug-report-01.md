@@ -17,7 +17,6 @@ Permite a submissão de valores inválidos para o backend, compromete a integrid
 
 ## Ambiente
 **Ambiente:** Ambiente similar ao de produção
-**Feature flags:** Padrões padrão, sem flags de validação de input habilitadas
 
 ## Passos para Reproduzir
 1. Dado que estou na tela de login

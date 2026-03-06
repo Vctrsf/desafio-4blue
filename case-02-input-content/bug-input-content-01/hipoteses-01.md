@@ -1,13 +1,11 @@
 ## Hipóteses — Campo Telefone Aceita Caracteres Não-Numéricos
 
 ### Prováveis Causas
-1. **Ausência de restrição de tipo no input**
-   * O campo está implementado como `type="text"` genérico em vez de `type="tel"`, 
-   ou sem atributo `inputmode="numeric"` e `pattern="[0-9]*"`, permitindo qualquer caractere.
+1. **Restrição de tipo insuficiente**
+   * O campo possui `type="tel"`, que restringe a entrada apenas em dispositivos móveis. Em desktop, browsers como Chrome e Firefox não bloqueiam caracteres não-numéricos via teclado físico. Faltam os atributos complementares `inputmode="numeric"` e `pattern="[0-9]*"`.
 
-2. **Validação não implementada**
-   * Não há regra de validação JavaScript ou de formulário bloqueando a entrada de caracteres 
-   não-numéricos, seja no evento `onchange`, `oninput` ou na submissão do formulário.
+2. **Validação client-side não implementada**
+   * Não há lógica no front bloqueando a entrada de caracteres não-numéricos em tempo real via `oninput`, tornando o `type="tel"` insuficiente como única restrição.
 
 3. **Falta de cobertura de testes de validação**
    * Não há testes automatizados verificando o comportamento do campo TELEFONE para entradas 

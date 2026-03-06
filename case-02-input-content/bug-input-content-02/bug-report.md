@@ -21,7 +21,6 @@ direto na experiência do usuário e na integridade do formato dos dados.)
 
 ## Ambiente
 **Ambiente:** Ambiente similar ao de produção
-**Feature flags:** Padrões padrão, sem flags de formatação de input habilitadas
 
 
 ## Passos para Reproduzir
