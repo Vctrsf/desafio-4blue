@@ -1,44 +1,36 @@
-# Bug Report — Campo Telefone não possui máscara de telefone
+# Bug Report — Ausência de Máscara no Campo Telefone
 
 ## Resumo
-O campo TELEFONE do formulário de cadastro não possui restrição de entrada, permitindo que letras e caracteres especiais sejam inseridos livremente, sem qualquer validação ou bloqueio.
+O campo TELEFONE do formulário de cadastro não aplica máscara de formatação durante a digitação.
+Apesar do placeholder indicar visualmente o formato `(00) 00000-0000`, o valor é exibido como 
+uma sequência de dígitos sem formatação, como `13999999999`.
 
 ## Impacto
-Permite a submissão de valores inválidos para o backend, compromete a integridade dos dados coletados e introduz inconsistência de validação no formulário de cadastro. 
-**Severidade:** Baixa (falha de validação com impacto direto na integridade dos dados, sem quebra crítica do sistema.)
+Quebra o alinhamento entre a expectativa visual criada pelo placeholder e o comportamento real 
+do campo, dificulta a leitura e conferência do número pelo usuário e entrega um dado não 
+formatado ao backend.
+ **Severidade:** Média (inconsistência funcional e visual com impacto 
+direto na experiência do usuário e na integridade do formato dos dados.)
+ **Impacto:** Baixo (não compromete a funcionalidade ou uso do campo)
 
 ## Escopo
-**Afeta:** 
- 1. Campo TELEFONE no formulário de criação de conta (front)
+**Afeta:** Campo TELEFONE no formulário de cadastro
 **Plataformas:** Web (desktop e visualizações responsivas)
 **Navegadores:** Reproduzível em navegadores modernos (baseados em Chromium e WebKit)
-**Usuários:** Todos os usuários que acessam a tela de criação de conta
+**Usuários:** Todos os usuários que acessam a tela de cadastro
 
 ## Ambiente
 **Ambiente:** Ambiente similar ao de produção
-**Feature flags:** Padrões padrão, sem flags de validação de input habilitadas
+**Feature flags:** Padrões padrão, sem flags de formatação de input habilitadas
 
-
-## Passos para Reproduzir
-1. Dado que estou na tela de login
-2. Quando clico na opção "Criar conta"
-3. E localizo os campos NOME COMPLETO, TELEFONE, EMAIL, SENHA e CONFIRMAR SENHA.
-4. Então verifico que o padding definido para os campos do formulário estão fora do padrão de design, sobrepondo uns aos outros
 
 ## Passos para Reproduzir
 1. Dado que estou na tela de login
 2. Quando clico na opção "Criar conta"
 3. E localizo o campo TELEFONE.
-4. Quando insiro letras ou caracteres especiais (ex: `AA111`, `abc!@#`).
-5. Então o campo aceita os valores sem restrição ou mensagem de erro.
+4. Quando insiro um número válido (ex: `13999999999`).
+5. Observe que o valor é exibido sem formatação, ignorando o padrão `(00) 00000-0000` indicado pelo placeholder.
 
 ## Resultado Esperado
-O campo TELEFONE deve aceitar apenas caracteres numéricos, bloqueando qualquer entrada de letras 
-ou símbolos e exibindo uma mensagem de validação caso o valor inserido seja inválido.
-
-## Hipóteses
-**Ausência de validação no input**
-* O campo TELEFONE não possui o atributo `type="tel"` ou restrição via `pattern`, `inputmode` 
-ou validação JavaScript, permitindo qualquer tipo de caractere. O comportamento correto seria 
-restringir a entrada a dígitos numéricos, consumindo uma regra de validação centralizada do 
-design system em vez de depender do comportamento padrão do browser.
+O campo TELEFONE deve aplicar máscara de formatação em tempo real durante a digitação, 
+exibindo o valor no formato `(13) 99999-9999` conforme indicado pelo placeholder.

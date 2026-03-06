@@ -3,7 +3,7 @@
 Os campos do formulário de cadastro apresentam padding interno inconsistente em todos os inputs. Os campos NOME COMPLETO, TELEFONE, EMAIL, SENHA e CONFIRMAR SENHA estão renderizando com espaçamento interno visivelmente maior do que o definido, resultando em uma inconsistência visual generalizada e desalinhamento com o design system.
 
 
-# Impact
+# Impacto
 Quebra o alinhamento visual entre design e implementação, reduz a reconhecibilidade dos campos do formulário e introduz uma linguagem visual inconsistente na mesma superfície de UI. 
 Impacto: Médio (inconsistência de UI com impacto direto na qualidade visual, sem perda de dados ou quebra funcional)
 

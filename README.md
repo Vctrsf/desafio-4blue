@@ -1,35 +1,21 @@
-Teste Técnico – QA Tester - Processo Seletivo – 4blue
-Você receberá acesso a um microssistema web contendo:
-• Tela de Login
-• Tela de Criação de Conta
-• Tela simples de Sucesso
+## Arquitetura de Pastas — Bug Reports 4blue
+```
+bug-reports/
+├── input-padding/          # Problemas visuais dos campos
+│
+│
+├── input-content/          # Bugs de preenchimento dos campos
+│
+└── submit/                 # Bugs de envio do formulário
+```
 
-O objetivo é avaliar sua capacidade de:
-• Identificar bugs funcionais
-• Identificar inconsistências de experiência
-• Avaliar problemas de segurança básicos
-• Classificar e priorizar problemas
+### Descrição das Pastas
 
-Acesso o “microssistema” pelo: https://qa-play-sim.lovable.app/
+**`input-padding/`**
+Contém bugs relacionados a inconsistências visuais dos campos, como espaçamento interno, alinhamento e divergências entre o layout implementado.
 
-Sua tarefa
-Durante sua análise, você deverá:
-1. Explorar o sistema livremente.
-2. Identificar e descrever os bugs encontrados.
-3. Para cada bug encontrado, informar:
-o Título
-o Descrição
-o Passos para reproduzir (Pode ser em vídeo – nesse caso coloque o link dele)
-o Resultado atual
-o Resultado esperado
-o Severidade (Crítico / Alto / Médio / Baixo)
-o Prioridade (Alta / Média / Baixa)
+**`input-content/`**
+Contém bugs relacionados ao comportamento de preenchimento dos campos, como ausência de validação de tipo, falta de máscara de formatação e restrições de entrada.
 
-4. Ao final, responder:
-o Quais 2 bugs você corrigiria primeiro e por quê?
-o Caso tenha, coloque suas sugestões de melhorias para essas telas.
-
-Entrega
-Crie um repositório público no Github e coloque um arquivo ReadMe.md contendo todas as
-informações da tarefa e a sua resposta.
-Envie como resposta apenas o link do repositório no github.
+**`submit/`**
+Contém bugs relacionados ao envio do formulário, como ausência de validação de campos obrigatórios, envio com dados indevidos e comportamentos incorretos ao clicar em "Criar conta" ou "Entrar".
