@@ -7,7 +7,7 @@ desafio-4blue/
 │
 └── case-03-submit/
         
-```
+
 
 ### Descrição das Pastas
 
@@ -27,11 +27,13 @@ Contém bugs relacionados ao envio do formulário, como ausência de validação
 
 **`suggestions`**
 Contém sugestões de melhoria para o portal, considerando
-### Descrição das Arquivos
 
-**`bug-report`**
 
-# Estrutura do Bug Report
+# Descrição das Arquivos
+
+## **`bug-report`**
+
+## Estrutura do Bug Report
 
 - **Resumo** — descrição objetiva do problema observado e onde ele ocorre.
 - **Impacto** — consequências do bug, com Severidade (gravidade técnica) e Impacto (abrangência funcional).
@@ -41,10 +43,11 @@ Contém sugestões de melhoria para o portal, considerando
 - **Resultado Esperado** — comportamento correto que o sistema deveria se comportar
 
 ---
-**`hipoteses`**
-## Estrutura das Hipóteses
+## **`hipoteses`**
+# Estrutura das Hipóteses
 
 - **Prováveis Causas** — causas técnicas mais prováveis para o bug.
 - **Fatores Contribuintes** — lacunas de processo ou arquitetura que permitiram o bug chegar à produção.
 - **Riscos de Regressão** — riscos de o problema se agravar ou se replicar em outras partes do produto.
 - **Estratégia de Mitigação** — ações recomendadas para corrigir o bug e prevenir recorrências.
+``` 
