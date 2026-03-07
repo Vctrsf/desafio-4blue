@@ -65,10 +65,14 @@
 
 
 ### CT-01 — Criação de conta com campos preenchidos corretamente
-| NOME COMPLETO | TELEFONE  | EMAIL                |  SENHA  | CONFIRMAR SENHA |
 
-| Victor Souza  |13400028922|emaildeteste@gmail.com|Senha@123|    Senha@123    |
-
+| Campo          |     Valor inserido    |
+|----------------|-----------------------|
+| NOME COMPLETO  | Victor Souza          |
+| TELEFONE       | 13400028922           |
+| EMAIL          | emaildeteste@gmail.com|
+| SENHA          | Senha@123             |
+| CONFIRMAR SENHA| Senha@123             |
 
 **Passos:**
 1. Dado que estou na tela de cadastro
@@ -80,11 +84,6 @@
 ---
 
 ### CT-02 — Criação de conta com dados inválidos
-| NOME COMPLETO | TELEFONE  | EMAIL          |       SENHA          |    CONFIRMAR SENHA     |
-
-| Victor Souza  |13400028922|emaildeteste.com| Senhasemmáscaraforte | Senhasemmáscaraforte   |
-| Victor Souza  |13400028922|emaildeteste.com| Senhasemmáscaraforte | Senhasemmáscaraforte   |
-
 
 | Campo          |  Valor inserido |
 |----------------|-----------------|
@@ -119,10 +118,3 @@
 4. Então o sistema não deve permitir que a conta seja criada e emita um aviso nos campos em branco que não há dados inseridos
 
 ---
-
-## CT- — Mensagem de sucesso após cadastro
-
-**Passos:**
-1. Dado que estou na tela de cadastro
-2. Quando preencho todos os campos corretamente e clico em "Criar conta"
-3. Então deve ser exibida uma mensagem ou ícone de confirmação de cadastro realizado
