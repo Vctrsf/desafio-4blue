@@ -9,7 +9,7 @@
    * O botão "Entrar" está disparando a requisição de login independente de os campos estarem preenchidos ou não, sem nenhuma verificação anterior ao envio.
 
 3. **Sem testes para esse cenário**
-   * Ninguém testou o que acontece quando o usuário clica em "Entrar" sem preencher nenhum campo, então o problema passou despercebido.
+   * Não houve mapeamento de testes para quando o usuário clica em "Entrar" sem preencher nenhum campo, então o problema passou despercebido.
 
 ### Fatores Contribuintes
 * O componente de input do shadcn/ui não faz validação de campos obrigatórios automaticamente — ela precisa ser feita manualmente no código React.  

@@ -11,7 +11,7 @@
    * A API de cadastro pode não estar verificando se o email já existe antes de criar um novo registro, processando o cadastro normalmente mesmo com um email já utilizado.
 
 4. **Sem testes para esse cenário**
-   * Ninguém testou o que acontece quando o usuário tenta criar uma conta com um email já cadastrado, então o problema passou despercebido.
+   * Não houveram casos de teste prototipados para quando o usuário tenta criar uma conta com um email já cadastrado, então o problema passou despercebido.
 
 ### Fatores Contribuintes
 * Não existe uma regra de unicidade definida para o campo email, nem no front, nem no backend, nem no banco de dados.  

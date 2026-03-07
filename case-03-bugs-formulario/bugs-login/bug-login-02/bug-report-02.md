@@ -9,7 +9,7 @@ nenhuma credencial válida e expondo o produto a riscos críticos de segurança.
 
 **Severidade:** Crítica — falha crítica de autenticação com impacto direto na segurança do sistema.   
 **Impacto:** Alto (permite acesso indevido ao sistema sem nenhuma credencial)  
-**Prioridade:** Crítica  
+**Prioridade:** Alta  
 
 ## Escopo
 **Afeta:** Tela de login (campos EMAIL e SENHA)  

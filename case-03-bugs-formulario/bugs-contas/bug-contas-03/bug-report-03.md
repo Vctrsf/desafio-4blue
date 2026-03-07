@@ -8,7 +8,7 @@ Compromete diretamente a segurança das contas dos usuários, permitindo que qua
 
 **Severidade:** Crítica — falha de segurança que permite a tomada de conta de outros usuários.  
 **Impacto:** Alto (qualquer conta cadastrada no sistema pode ser comprometida por um usuário mal-intencionado)  
-**Prioridade:** Crítica  
+**Prioridade:** Alta  
 
 ## Escopo
 **Afeta:** Formulário de cadastro — campo EMAIL  

@@ -8,7 +8,7 @@
 | Campo | Valor esperado | 
 |-------|-----------------------|
 | EMAIL | emailcorreto@gmail.com|
-| SENHA | Senha@123             |
+| SENHA |                        |
 
 **Passos:**
 1. Dado que estou na tela de login
@@ -35,13 +35,13 @@
 | Campo | Valor esperado          | 
 |-------|-----------------------  |
 | EMAIL | emailincorreto@gmail.com|
-| SENHA | Senha@123               |
+| SENHA |                          |
 
 **Passos:**
 1. Dado que estou na tela de login
 2. Quando insiro dados nos campos EMAIL e SENHA que não estão na base de dados
-3. E clico e entrar
-4. Então o sistema não deve permitir que o usuário acesse o sistema e emitir uma mensagem de aviso.
+3. E clico no botão "Entrar"
+4. Então o sistema não deve permitir que o usuário acesse o sistema e emitir uma mensagem de aviso
 
 ---
 
@@ -71,8 +71,8 @@
 | NOME COMPLETO  | Victor Souza          |
 | TELEFONE       | 13400028922           |
 | EMAIL          | emaildeteste@gmail.com|
-| SENHA          | Senha@123             |
-| CONFIRMAR SENHA| Senha@123             |
+| SENHA          |                       |
+| CONFIRMAR SENHA|                       |
 
 **Passos:**
 1. Dado que estou na tela de cadastro
@@ -117,4 +117,38 @@
 3. Quando clico no botão "Criar conta"
 4. Então o sistema não deve permitir que a conta seja criada e emita um aviso nos campos em branco que não há dados inseridos
 
+
+### CT-04 — Criação de conta com dados já cadastrados (reutilização de dados do CT-01)
+
+| Campo          |     Valor inserido    |
+|----------------|-----------------------|
+| NOME COMPLETO  | Victor Souza          |
+| TELEFONE       | 13400028922           |
+| EMAIL          | emaildeteste@gmail.com|
+| SENHA          |                       |
+| CONFIRMAR SENHA|                       |
+
+**Passos:**
+1. Dado que estou na tela de cadastro de contas
+2. E preencho os campos NOME COMPLETO, TELEFONE, EMAIL, SENHA, CONFIRMAR SENHA com dados que já existem na base de dados
+3. Quando clico no botão "Criar conta"
+4. Então o sistema não deve permitir que a conta seja criada e emitir um aviso de que o NOME ou E-MAIL da pessoa já está cadastrado no sistema
+
 ---
+
+### CT-04 — Criação de conta sem senha
+
+| Campo          |     Valor inserido    |
+|----------------|-----------------------|
+| NOME COMPLETO  | Victor Souza          |
+| TELEFONE       | 13400028922           |
+| EMAIL          | emaildeteste@gmail.com|
+| SENHA          |                       |
+| CONFIRMAR SENHA|                       |
+
+**Passos:**
+1. Dado que estou na tela de cadastro de contas
+2. E preencho os campos NOME COMPLETO, TELEFONE, EMAIL com dados válidos
+3. Mas mantenho os campos SENHA e CONFIRMAR SENHA em branco
+3. Quando clico no botão "Criar conta"
+4. Então o sistema não deve permitir que a conta seja criada e emitir um aviso de que os campos de SENHA e CONFIRMAR SENHA são obrigatórios e estão em branco.
