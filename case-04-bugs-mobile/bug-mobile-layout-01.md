@@ -25,8 +25,7 @@ inacessível e indicando que o layout não está adaptado corretamente para tela
 ## Passos para Reproduzir
 1. Dado que estou acessando o portal via dispositivo móvel
 2. Quando acesso a tela de login
-3. Observo que o conteúdo está deslocado para fora da área visível da tela, 
-cortando parte do layout pela borda esquerda
+3. Observo que o conteúdo está deslocado para fora da área visível da tela, cortando parte do layout pela borda esquerda
 
 ## Resultado Esperado
 O conteúdo da tela de login deve estar centralizado e completamente visível 

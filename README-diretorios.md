@@ -1,9 +1,9 @@
 ## Arquitetura de Pastas — Bug Reports 4blue
 ```
 desafio-4blue/
-├── case-01-input-layout/
+├── case-01-bugs-layout/
 │
-├── case-02-input-content/
+├── case-02-bugs-content/
 │
 └── case-03-submit/
     ├── submit-login/
@@ -12,23 +12,20 @@ desafio-4blue/
 
 ### Descrição das Pastas
 
-**`case-01-input-layout/`**
+**`case-01-bugs-visuais/`**
 Contém bugs relacionados a inconsistências visuais dos campos, como espaçamento interno, alinhamento e divergências entre o layout implementado e o definido na prototipagem.
 
-**`case-02-input-content/`**
+**`case-02-bugs-inputs/`**
 Contém bugs relacionados ao comportamento de preenchimento dos campos, como ausência de validação de tipo, falta de máscara de formatação e restrições de entrada.
 
-**`case-03-submit/`**
+**`case-03-formulario/`**
 Contém bugs relacionados ao envio do formulário, como ausência de validação de campos obrigatórios, envio indevido e comportamentos incorretos ao clicar em "Criar conta" e "Entrar"
 
-- **`submit-login/`** — Relatórios relacionados ao envio do formulário na tela de login
-- **`submit-account/`** — Relatórios relacionados ao envio do formulário na tela de criação de conta
+- **`bugs-contas/`** — Relatórios relacionados ao envio do formulário na tela de criação de conta
+- **`bugs-login/`** — Relatórios relacionados ao envio do formulário na tela de login
 
-**`case-04-mobile/`**
+**`case-04-bugs-mobile/`**
 Contém bugs relacionados à validação do portal em ambiente mobile.
-
-**`suggestions/`**
-Contém sugestões de melhoria para o portal.
 
 ---
 
