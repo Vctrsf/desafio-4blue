@@ -9,10 +9,10 @@ uma sequência de dígitos sem formatação, como `13999999999`.
 Quebra o alinhamento entre a expectativa visual criada pelo placeholder e o comportamento real 
 do campo, dificulta a leitura e conferência do número pelo usuário e entrega um dado não 
 formatado ao backend.
- **Severidade:** Média (inconsistência funcional e visual com impacto 
-direto na experiência do usuário e na integridade do formato dos dados.)
- **Impacto:** Baixo (não compromete a funcionalidade ou uso do campo)
- **Prioridade:** Baixa
+ **Severidade:** Média (inconsistência funcional e visual com impacto direto na experiência do usuário e na integridade do formato dos dados.)  
+ **Impacto:** Baixo (não compromete a funcionalidade ou uso do campo)  
+ **Prioridade:** Baixa  
+
 ## Escopo
 **Afeta:** Campo TELEFONE no formulário de cadastro
 **Plataformas:** Web (desktop e visualizações responsivas)

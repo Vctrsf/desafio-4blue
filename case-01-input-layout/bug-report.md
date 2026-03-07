@@ -1,4 +1,4 @@
-# Bug Report — Inputs possuem layout sobreposto
+# Bug Report — Inputs Possuem Layout Sobreposto
 
 ## Resumo
 Os campos do formulário de cadastro apresentam padding interno inconsistente em todos os inputs. Os campos NOME COMPLETO, TELEFONE, EMAIL, SENHA e CONFIRMAR SENHA estão renderizando com espaçamento interno visivelmente maior do que o definido, resultando em uma inconsistência visual generalizada.

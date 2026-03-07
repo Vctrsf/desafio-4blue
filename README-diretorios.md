@@ -19,7 +19,7 @@ Contém bugs relacionados a inconsistências visuais dos campos, como espaçamen
 Contém bugs relacionados ao comportamento de preenchimento dos campos, como ausência de validação de tipo, falta de máscara de formatação e restrições de entrada.
 
 **`case-03-submit/`**
-Contém bugs relacionados ao envio do formulário, como ausência de validação de campos obrigatórios, submissão indevida e comportamentos incorretos ao clicar em "Criar conta" e "Entrar"
+Contém bugs relacionados ao envio do formulário, como ausência de validação de campos obrigatórios, envio indevido e comportamentos incorretos ao clicar em "Criar conta" e "Entrar"
 
 - **`submit-login/`** — Relatórios relacionados ao envio do formulário na tela de login
 - **`submit-account/`** — Relatórios relacionados ao envio do formulário na tela de criação de conta

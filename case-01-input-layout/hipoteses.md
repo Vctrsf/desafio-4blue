@@ -15,6 +15,6 @@
 2. Outros formulários do projeto podem acabar usando o mesmo padrão errado.
 
 ### Estratégia de Mitigação
-* Verificar quais são os valores de espaçamento corretos no Figma e aplicá-los nos campos.
+* Verificar quais são os valores de espaçamento corretos na prototipagem e aplicá-los nos campos.
 * Criar uma verificação visual para garantir que os campos estejam aparecendo corretamente.
 * Durante a revisão do código, comparar o espaçamento dos campos com o que está definido na prototipagem.

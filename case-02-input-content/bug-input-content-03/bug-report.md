@@ -5,15 +5,15 @@ O formulário de cadastro exibe a regra de que a senha deve conter no mínimo 8 
 
 ## Impacto
 Compromete a política de segurança de senhas do produto, permitindo o cadastro com senhas fracas e fora do padrão definido, expondo os usuários a riscos de segurança.
-**Severidade:** Alta — falha de validação crítica que compromete diretamente a segurança das contas dos usuários.
-**Impacto:** Alto (permite criação de contas com senhas que não atendem à política de segurança)
-**Prioridade:** Alta
+**Severidade:** Alta — falha de validação crítica.  
+**Impacto:** Alto (permite criação de contas com senhas fracas)  
+**Prioridade:** Alta  
 
 ## Escopo
-**Afeta:** Campo SENHA no formulário de cadastro
-**Plataformas:** Web (desktop e visualizações responsivas)
-**Navegadores:** Reproduzível em navegadores modernos (baseados em Chromium e WebKit)
-**Usuários:** Todos os usuários que acessam a tela de cadastro
+**Afeta:** Campo SENHA no formulário de cadastro  
+**Plataformas:** Web (desktop e visualizações responsivas)  
+**Navegadores:** Reproduzível em navegadores modernos (baseados em Chromium e WebKit)  
+**Usuários:** Todos os usuários que acessam a tela de cadastro  
 
 ## Ambiente
 **Ambiente:** Ambiente similar ao de produção

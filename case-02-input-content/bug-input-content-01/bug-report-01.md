@@ -4,10 +4,10 @@
 O campo TELEFONE do formulário de cadastro não possui restrição de entrada, permitindo que letras e caracteres especiais sejam inseridos livremente, sem qualquer validação ou bloqueio.
 
 ## Impacto
-Permite a submissão de valores inválidos para o backend, compromete a integridade dos dados coletados e introduz inconsistência de validação no formulário de cadastro.
-**Severidade:** Média — falha de validação com impacto direto na integridade dos dados, sem quebra crítica do sistema.
-**Impacto:** Médio — permite o envio de dados inválidos ao backend, comprometendo a integridade dos registros
-**Prioridade**: Média
+Permite o envio de valores inválidos para o backend, compromete a integridade dos dados coletados e introduz inconsistência de validação no formulário de cadastro.
+**Severidade:** Média — falha de validação com impacto direto na integridade dos dados, sem quebra crítica do sistema.  
+**Impacto:** Médio — permite o envio de dados inválidos ao backend, comprometendo a integridade dos registros  
+**Prioridade**: Média  
 
 
 ## Escopo
