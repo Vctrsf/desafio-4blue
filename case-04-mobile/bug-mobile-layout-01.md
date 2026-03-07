@@ -8,15 +8,16 @@ para fora da área visível.
 ## Impacto
 Compromete a experiência do usuário em dispositivos móveis, tornando parte do conteúdo 
 inacessível e indicando que o layout não está adaptado corretamente para telas menores.
+
 **Severidade:** Média — problema de responsividade com impacto direto na experiência do usuário em mobile.  
 **Impacto:** Médio (afeta todos os usuários que acessam o portal via dispositivo móvel)  
 **Prioridade:** Média  
 
 ## Escopo
-**Afeta:** Tela de login
-**Plataformas:** Mobile (Android)
-**Navegadores:** Reproduzível em navegadores modernos mobile
-**Usuários:** Todos os usuários que acessam a tela de login via dispositivo móvel
+**Afeta:** Tela de login  
+**Plataformas:** Mobile (Android)  
+**Navegadores:** Reproduzível em navegadores modernos mobile  
+**Usuários:** Todos os usuários que acessam a tela de login via dispositivo móvel  
 
 ## Ambiente
 **Ambiente:** Ambiente similar ao de produção

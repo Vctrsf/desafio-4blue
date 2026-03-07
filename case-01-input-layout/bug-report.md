@@ -5,15 +5,16 @@ Os campos do formulário de cadastro apresentam padding interno inconsistente em
 
 ## Impacto
 Quebra o alinhamento visual entre design e implementação, reduz a reconhecibilidade dos campos do formulário e introduz uma linguagem visual inconsistente na mesma superfície de UI.
-**Severidade:** Baixa — inconsistência visual sem impacto funcional ou de segurança.
-**Impacto:** Baixo (afeta apenas a aparência dos campos, sem comprometer o funcionamento do formulário)
-**Prioridade:** Baixa
+
+**Severidade:** Baixa — inconsistência visual sem impacto funcional ou de segurança.  
+**Impacto:** Baixo (afeta apenas a aparência dos campos, sem comprometer o funcionamento do formulário)  
+**Prioridade:** Baixa  
 
 ## Escopo
-**Afeta:** Formulário de cadastro
-**Plataformas:** Web (desktop e visualizações responsivas)
-**Navegadores:** Reproduzível em navegadores modernos (baseados em Chromium e WebKit)
-**Usuários:** Todos os usuários que acessam a tela de criação de conta
+**Afeta:** Formulário de cadastro  
+**Plataformas:** Web (desktop e visualizações responsivas)  
+**Navegadores:** Reproduzível em navegadores modernos (baseados em Chromium e WebKit)  
+**Usuários:** Todos os usuários que acessam a tela de criação de conta  
 
 ## Ambiente
 **Ambiente:** Ambiente similar ao de produção
