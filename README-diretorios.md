@@ -24,6 +24,9 @@ Contém bugs relacionados ao envio do formulário, como ausência de validação
 - **`submit-login/`** — Relatórios relacionados ao envio do formulário na tela de login
 - **`submit-account/`** — Relatórios relacionados ao envio do formulário na tela de criação de conta
 
+**`case-04-mobile/`**
+Contém bugs relacionados à validação do portal em ambiente mobile.
+
 **`suggestions/`**
 Contém sugestões de melhoria para o portal.
 
@@ -38,7 +41,7 @@ Contém sugestões de melhoria para o portal.
 - **Resumo** — descrição objetiva do problema observado e onde ele ocorre.
 - **Impacto** — consequências do bug, com Severidade (gravidade técnica) e Impacto (abrangência funcional).
 - **Escopo** — o que é afetado, em quais plataformas, navegadores e para quais usuários.
-- **Ambiente** — ambiente de reprodução e estado das feature flags.
+- **Ambiente** — ambiente de reprodução (Ambiente local, Dev, QA, Homologação, etc.)
 - **Passos para Reproduzir** — sequência de ações que leva ao comportamento incorreto.
 - **Resultado Esperado** — comportamento correto que o sistema deveria apresentar.
 

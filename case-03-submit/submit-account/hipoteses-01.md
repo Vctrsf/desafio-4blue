@@ -2,8 +2,7 @@
 
 ### Prováveis Causas
 1. **Ausência de validação de campos obrigatórios**
-   * Os campos do formulário não possuem o atributo `required` ou validação via React, permitindo a envio sem qualquer verificação 
-   de preenchimento.
+   * Os campos do formulário não possuem o atributo `required` ou validação via React, permitindo a envio sem qualquer verificação de preenchimento.
 
 2. **Componente shadcn/ui sem validação nativa**
    * Os inputs utilizam o componente base do shadcn/ui, que não inclui validação de obrigatoriedade por padrão. A validação precisa ser implementada explicitamente no componente React, o que não foi feito.

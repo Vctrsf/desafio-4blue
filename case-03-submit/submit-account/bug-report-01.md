@@ -5,8 +5,9 @@ O formulário de cadastro permite que o usuário clique em "Criar conta" sem pre
 
 ## Impacto
 Permite o envio de um formulário completamente vazio, comprometendo a integridade dos dados enviados ao backend e quebrando o fluxo esperado de cadastro. 
-**Severidade:** Alta — falha de validação crítica que compromete diretamente o fluxo de cadastro e a integridade dos dados. 
+**Severidade:** Crítica — falha de validação crítica que compromete diretamente o fluxo de cadastro e a integridade dos dados. 
 **Impacto:** Alto (permite criação de registros inválidos ou incompletos no sistema)
+**Prioridade**: Crítica
 
 ## Escopo
 **Afeta:** Formulário de cadastro completo (NOME COMPLETO, TELEFONE, EMAIL, SENHA, CONFIRMAR SENHA)
@@ -25,5 +26,4 @@ Permite o envio de um formulário completamente vazio, comprometendo a integrida
 5. Observo que o sistema não exibe mensagens de validação e permite a envio
 
 ## Resultado Esperado
-Ao tentar submeter o formulário com campos vazios, o sistema deve bloquear a envio e 
-exibir mensagens de validação indicando quais campos são obrigatórios.
+Ao tentar submeter o formulário com campos vazios, o sistema deve bloquear a envio e exibir mensagens de validação indicando quais campos são obrigatórios.

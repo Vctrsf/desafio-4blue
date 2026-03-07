@@ -12,16 +12,13 @@
    inválidas, o que permitiu que a ausência de validação passasse despercebida.
 
 ### Fatores Contribuintes
-* Ausência de um componente centralizado de input de telefone no design system que já 
-encapsule as regras de validação.
-* Revisão insuficiente entre implementação e prototipagem para o comportamento esperado do campo.
+* Não existe um componente de input de telefone pronto no projeto que já venha com as regras de validação incluídas.
+* O comportamento do campo não foi verificado com cuidado durante a revisão do código.
 
 ### Riscos de Regressão
 1. Dados inválidos podem ser persistidos no backend caso não haja validação server-side complementar.
 2. Outros campos numéricos do produto podem replicar o mesmo padrão sem restrição de entrada.
 
 ### Estratégia de Mitigação
-* Adicionar `inputmode="numeric"` e `pattern="[0-9]*"` ao campo.
-* Implementar validação client-side bloqueando caracteres não-numéricos no evento `oninput`.
 * Adicionar casos de teste automatizados para entradas inválidas no campo TELEFONE.
 * Incluir verificação explícita de comportamento de validação durante o code review.

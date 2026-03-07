@@ -1,24 +1,20 @@
 ## Hipóteses — Padding Inconsistente nos Campos do Formulário
 
 ### Prováveis Causas
-1. **Estilo global sobrescrevendo o design system**
-   * Um estilo CSS global ou reset está aplicando padding diferente do especificado na prototipagem.
+1. **Estilo global interferindo no padding dos campos**
+   * Algum CSS global da aplicação pode estar aplicando um padding,sobrescrevendo o estilo esperado.
 
-2. **Ausência de binding com tokens de espaçamento**
-   * Os campos não estão consumindo os tokens de espaçamento do design system, e valores hardcoded foram usados no lugar.
-
-3. **Falta de cobertura de regressão visual**
-   * Não há testes ou verificações automatizadas que garantam a fidelidade do padding dos inputs em relação ao Figma.
+2. **Falta de testes visuais**
+   * Não existe nenhuma verificação automatizada que compare como os campos estão aparecendo na tela.
 
 ### Fatores Contribuintes
-* Ausência de um mapeamento centralizado entre os tokens de espaçamento e os componentes de formulário.
-* Revisão insuficiente entre implementação e prototipagem para essa superfície específica.
+* Não há uma referência centralizada de espaçamento no projeto que os componentes de formulário possam seguir.
 
 ### Riscos de Regressão
-1. Refatorações futuras podem agravar a inconsistência se o padding continuar hardcoded.
-2. Outros formulários do produto podem replicar o mesmo padrão incorreto.
+1. Se o padding continuar escrito diretamente no CSS sem usar variáveis, qualquer alteração futura pode piorar a inconsistência.
+2. Outros formulários do projeto podem acabar usando o mesmo padrão errado.
 
 ### Estratégia de Mitigação
-* Mapear os tokens de espaçamento corretos no design system e aplicá-los aos campos.
-* Adicionar um teste de regressão visual para o formulário de cadastro.
-* Incluir verificação explícita de espaçamento interno durante o code review.
+* Verificar quais são os valores de espaçamento corretos no Figma e aplicá-los nos campos.
+* Criar uma verificação visual para garantir que os campos estejam aparecendo corretamente.
+* Durante a revisão do código, comparar o espaçamento dos campos com o que está definido na prototipagem.

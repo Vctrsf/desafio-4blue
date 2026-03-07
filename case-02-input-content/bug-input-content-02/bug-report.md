@@ -12,7 +12,7 @@ formatado ao backend.
  **Severidade:** Média (inconsistência funcional e visual com impacto 
 direto na experiência do usuário e na integridade do formato dos dados.)
  **Impacto:** Baixo (não compromete a funcionalidade ou uso do campo)
-
+ **Prioridade:** Baixa
 ## Escopo
 **Afeta:** Campo TELEFONE no formulário de cadastro
 **Plataformas:** Web (desktop e visualizações responsivas)
